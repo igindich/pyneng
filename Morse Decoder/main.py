@@ -41,3 +41,25 @@ MORSE_CODE_DICT = { 'A':'.-',
                     '-':'-....-',
                     '(':'-.--.',
                     ')':'-.--.-'}
+
+def encrypt(message):
+    s = ''
+    for i in message:
+        if i != ' ':
+            s += MORSE_CODE_DICT[i] + ' '
+        else:
+            s +=' '
+    return s
+
+def decrypt(message):
+    return
+
+def main():
+    print(list(MORSE_CODE_DICT.keys())[list(MORSE_CODE_DICT.values()).index('...')])
+
+if __name__ =='__main__':
+    main()
+
+
+
+
